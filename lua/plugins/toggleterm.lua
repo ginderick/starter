@@ -18,7 +18,7 @@ return {
         "<leader>Th",
         function()
           local count = vim.v.count1
-          require("toggleterm").toggle(count, 15, Util.root.get(), "horizontal")
+          require("toggleterm").toggle(count, 10, Util.root.get(), "horizontal")
         end,
         desc = "ToggleTerm (horizontal root_dir)",
       },
