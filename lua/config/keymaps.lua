@@ -6,5 +6,4 @@ local map = vim.keymap.set
 local set = vim.opt
 local defaults = { noremap = true, silent = true }
 
-map("i", "jj", "<C-o>o", defaults)
 map({ "i", "v" }, "jk", "<Esc>", defaults)
