@@ -3,7 +3,8 @@
 -- Add any additional keymaps here
 
 local map = vim.keymap.set
-local set = vim.opt
 local defaults = { noremap = true, silent = true }
 
 map({ "i", "v" }, "jk", "<Esc>", defaults)
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
