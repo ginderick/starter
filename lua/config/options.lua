@@ -3,7 +3,8 @@
 -- Add any additional options here
 vim.opt.swapfile = false
 vim.opt.relativenumber = false
-
+vim.opt.timeoutlen = 1000
+vim.opt.ttimeoutlen = 0
 
 -- Gitsigns
 opts = {
