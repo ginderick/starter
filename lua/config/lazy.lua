@@ -7,6 +7,9 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
+  ui = {
+    border = "rounded",
+  },
   spec = {
     -- add LazyVim and import its plugins
     { "ginderick/LazyVim", import = "lazyvim.plugins" },
