@@ -56,7 +56,7 @@ return {
         follow_current_file = { enabled = true },
         use_libuv_file_watcher = true,
         filtered_items = {
-          never_show = { ".git", ".DS_Store" },
+          never_show = { ".git", ".DS_Store", "node_modules" },
           hide_dotfiles = false
         }
       },
