@@ -21,7 +21,7 @@ return {
         desc = "Explorer NeoTree (cwd)",
       },
       { "<leader>e", "<leader>fe", desc = "Explorer NeoTree (root dir)", remap = true },
-      { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (cwd)",      remap = true },
+      { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
       {
         "<leader>ge",
         function()
@@ -57,12 +57,13 @@ return {
         use_libuv_file_watcher = true,
         filtered_items = {
           never_show = { ".git", ".DS_Store", "node_modules" },
-          hide_dotfiles = false
-        }
+          hide_dotfiles = false,
+        },
       },
       window = {
         mappings = {
           ["<space>"] = "none",
+          ["<Tab>"] = "open",
           ["Y"] = function(state)
             local node = state.tree:get_node()
             local path = node:get_id()
@@ -87,7 +88,7 @@ return {
       local events = require("neo-tree.events")
       opts.event_handlers = opts.event_handlers or {}
       vim.list_extend(opts.event_handlers, {
-        { event = events.FILE_MOVED,   handler = on_move },
+        { event = events.FILE_MOVED, handler = on_move },
         { event = events.FILE_RENAMED, handler = on_move },
       })
       require("neo-tree").setup(opts)
@@ -100,5 +101,5 @@ return {
         end,
       })
     end,
-  }
+  },
 }
