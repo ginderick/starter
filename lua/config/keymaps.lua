@@ -8,3 +8,7 @@ local defaults = { noremap = true, silent = true }
 map({ "i", "v" }, "jk", "<Esc>", defaults)
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
+map("n", "n", "nzzzv")
+map("n", "N", "nzzzv")
+map("x", "<leader>p", '"_dP')
+
