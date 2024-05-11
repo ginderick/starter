@@ -1,7 +1,6 @@
 {
   "extras": [
     "lazyvim.plugins.extras.editor.harpoon2",
-    "lazyvim.plugins.extras.formatting.black",
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.go",
     "lazyvim.plugins.extras.lang.helm",
@@ -19,3 +18,4 @@
   },
   "version": 3
 }
+
