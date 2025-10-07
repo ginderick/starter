@@ -11,3 +11,7 @@ map("n", "<C-u>", "<C-u>zz")
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 map("x", "<leader>p", '"_dP')
+
+map("n", "<leader>gl", function()
+  require("neogit").action("log", "log_all_branches", { "--graph", "--decorate", "--color", "--all" })()
+end, { desc = "Neogit Log (All Branches)" })
