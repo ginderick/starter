@@ -1,0 +1,3 @@
+return {
+  "folke/sidekick.nvim",
+}
